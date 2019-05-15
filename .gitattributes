@@ -1,0 +1,29 @@
+* text=auto
+
+*.cs         text diff=csharp
+*.ps1        text
+*.sql        text
+*.xml        text
+*.config     text
+
+*.js         text
+*.html       text
+*.less       text
+*.json       text
+
+*.txt        text
+
+# Declare files that will always have CRLF line endings on checkout
+*.sln          text eol=crlf
+*.csproj       text eol=crlf
+*.bat          text eol=crlf
+*.vstemplate   text eol=crlf
+*.vsixmanifest text eol=crlf
+*.resx         text eol=crlf
+*.sfproj       text eol=crlf
+
+*.exe        binary
+*.dll        binary
+*.png        binary
+*.ico        binary
+*.snk        binary
