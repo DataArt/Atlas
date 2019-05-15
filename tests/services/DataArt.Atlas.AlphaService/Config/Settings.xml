@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Section Name="Hosting">
+    <Parameter Name="Url" Value="http://+:9001" />
+  </Section>
+  <Section Name="Logging">
+    <Parameter Name="SinkUrl" Value="http://localhost:5341/" MustOverride="true" />
+    <Parameter Name="ApiKey" Value="eQT6tvgnETQ2pmhTV626" />
+    <Parameter Name="Verbosity" Value="Verbose" />
+    <Parameter Name="Environment" Value="Local" />
+    <Parameter Name="ApplicationName" Value="Atlas" />
+  </Section>
+  <Section Name="ServiceBus">
+    <Parameter Name="QueueName" Value="alpha" />
+    <Parameter Name="RabbitUrl" Value="rabbitmq://localhost/test" MustOverride="true" />
+    <Parameter Name="RabbitUsername" Value="guest" MustOverride="true" IsEncrypted="true" />
+    <Parameter Name="RabbitPassword" Value="guest" MustOverride="true" IsEncrypted="true" />
+  </Section>
+  <Section Name="Discovery">
+    <Parameter Name="DiscoveryEndpoint" Value="http://localhost:9000" MustOverride="true" />
+  </Section>
+</Settings>

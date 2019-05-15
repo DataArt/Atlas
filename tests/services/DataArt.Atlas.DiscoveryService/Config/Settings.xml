@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Section Name="Hosting">
+    <Parameter Name="Url" Value="http://+:9000" />
+  </Section>
+  <Section Name="Logging">
+    <Parameter Name="SinkUrl" Value="http://localhost:5341/" MustOverride="true" />
+    <Parameter Name="ApiKey" Value="" />
+    <Parameter Name="Verbosity" Value="Verbose" />
+    <Parameter Name="Environment" Value="Local" />
+    <Parameter Name="ApplicationName" Value="Atlas" />
+  </Section>
+  <Section Name="AlphaDiscovery">
+    <Parameter Name="ServiceKey" Value="Alpha" />
+    <Parameter Name="ServiceEndpoint" Value="http://localhost:9001" />
+  </Section>
+  <Section Name="BetaDiscovery">
+    <Parameter Name="ServiceKey" Value="Beta" />
+    <Parameter Name="ServiceEndpoint" Value="http://localhost:9002" />
+  </Section>
+</Settings>

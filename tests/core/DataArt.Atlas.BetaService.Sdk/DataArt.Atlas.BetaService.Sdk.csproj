@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\core\DataArt.Atlas.Infrastructure\DataArt.Atlas.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\core\DataArt.Atlas.WebCommunication\DataArt.Atlas.WebCommunication.csproj" />
+  </ItemGroup>
+
+</Project>

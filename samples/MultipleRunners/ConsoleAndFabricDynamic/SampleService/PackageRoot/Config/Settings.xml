@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Section Name="Hosting">
+    <Parameter Name="Url" Value="http://+:9005" />
+  </Section>
+  <Section Name="Logging">
+    <Parameter Name="SinkUrl" Value="http://localhost:5341/" MustOverride="true" />
+    <Parameter Name="ApiKey" Value="" MustOverride="true" />
+    <Parameter Name="Verbosity" Value="Verbose" />
+    <Parameter Name="Environment" Value="Local" MustOverride="true" />
+    <Parameter Name="ApplicationName" Value="Sample Service" />
+  </Section>
+</Settings>

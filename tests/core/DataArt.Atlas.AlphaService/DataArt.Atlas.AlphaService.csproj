@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputPath>../.build/AlphaService</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\core\Configuration\DataArt.Atlas.Configuration.File\DataArt.Atlas.Configuration.File.csproj" />
+    <ProjectReference Include="..\..\..\core\DataArt.Atlas.Core\DataArt.Atlas.Core.csproj" />
+    <ProjectReference Include="..\..\..\core\Hosting\DataArt.Atlas.Hosting.Console\DataArt.Atlas.Hosting.Console.csproj" />
+    <ProjectReference Include="..\..\..\core\Logging\DataArt.Atlas.Logging\DataArt.Atlas.Logging.csproj" />
+    <ProjectReference Include="..\..\..\core\Messaging\DataArt.Atlas.Messaging.RabbitMQ\DataArt.Atlas.Messaging.RabbitMQ.csproj" />
+    <ProjectReference Include="..\..\..\core\Messaging\DataArt.Atlas.Messaging\DataArt.Atlas.Messaging.csproj" />
+    <ProjectReference Include="..\DataArt.Atlas.BetaService.Sdk\DataArt.Atlas.BetaService.Sdk.csproj" />
+    <ProjectReference Include="..\DataArt.Atlas.Common\DataArt.Atlas.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="hosting.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

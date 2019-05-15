@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/ServiceFabric" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="Secrets_Certificate_Thumbprint" Value="21e9e3b2f84bc424137d824562cc1508432c3dab" />
+    <Parameter Name="SampleService_InstanceCount" Value="1" />
+    <Parameter Name="Logging_SinkUrl" Value="http://localhost:5341/" />
+    <Parameter Name="Logging_ApiKey" Value="" />
+    <Parameter Name="Logging_Verbosity" Value="Verbose" />
+    <Parameter Name="Logging_Environment" Value="Cloud" />
+    <Parameter Name="Logging_ApplicationName" Value="Sample Service in the cloud" />
+  </Parameters>
+</Application>

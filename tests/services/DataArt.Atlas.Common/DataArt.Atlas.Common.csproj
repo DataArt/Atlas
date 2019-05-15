@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22DF22EA-CA11-4B6D-9997-3093F6827593}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataArt.Atlas.Common</RootNamespace>
+    <AssemblyName>DataArt.Atlas.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' or '$(Configuration)|$(Platform)' == 'Debug|x86' or '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>$(Platform)</PlatformTarget>
+    <OutputPath>..\.build\bin-$(Platform)-$(Configuration)</OutputPath>
+    <IntermediateOutputPath>..\.build\obj-$(Platform)-$(Configuration)</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' or '$(Configuration)|$(Platform)' == 'Release|x86' or '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PlatformTarget>$(Platform)</PlatformTarget>
+    <OutputPath>..\.build\bin-$(Platform)-$(Configuration)</OutputPath>
+    <IntermediateOutputPath>..\.build\obj-$(Platform)-$(Configuration)</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Flurl, Version=2.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\.packages\Flurl.2.8.1\lib\net40\Flurl.dll</HintPath>
+    </Reference>
+    <Reference Include="Flurl.Http, Version=2.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\.packages\Flurl.Http.2.4.1\lib\net45\Flurl.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\.packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\.packages\Serilog.2.8.0\lib\net45\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Enrichers.Thread, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\.packages\Serilog.Enrichers.Thread.3.0.0\lib\net45\Serilog.Enrichers.Thread.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serilog.Sinks.Console, Version=3.1.1.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\.packages\Serilog.Sinks.Console.3.1.1\lib\net45\Serilog.Sinks.Console.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomColoredConsole.cs" />
+    <Compile Include="CustomLogEnricher.cs" />
+    <Compile Include="Esb\CommunicationMessage.cs" />
+    <Compile Include="Settings\AtlasSettings.cs" />
+    <Compile Include="ServiceDiscovery.cs" />
+    <Compile Include="ConsoleApplicationRunner.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\DiscoverySettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\core\Configuration\DataArt.Atlas.Configuration.File\DataArt.Atlas.Configuration.File.csproj">
+      <Project>{1d989ea4-4f20-46e5-b73a-88d3d07c1029}</Project>
+      <Name>DataArt.Atlas.Configuration.File</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\core\Configuration\DataArt.Atlas.Configuration\DataArt.Atlas.Configuration.csproj">
+      <Project>{ed06940b-fb0a-4c07-bd1f-d2c9d7fa2e40}</Project>
+      <Name>DataArt.Atlas.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\core\DataArt.Atlas.CallContext\DataArt.Atlas.CallContext.csproj">
+      <Project>{c9fd3598-2de6-486f-8163-4fbff5317922}</Project>
+      <Name>DataArt.Atlas.CallContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\core\DataArt.Atlas.Core\DataArt.Atlas.Core.csproj">
+      <Project>{a54f63eb-c75f-4687-869e-9f4d017e2e9b}</Project>
+      <Name>DataArt.Atlas.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\core\Discovery\DataArt.Atlas.ServiceDiscovery\DataArt.Atlas.ServiceDiscovery.csproj">
+      <Project>{304d625f-9ffa-4757-b8d1-c747de567461}</Project>
+      <Name>DataArt.Atlas.ServiceDiscovery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\core\Hosting\DataArt.Atlas.Hosting.Console\DataArt.Atlas.Hosting.Console.csproj">
+      <Project>{d70efe3f-cf68-4d56-a16e-061c6e3a8487}</Project>
+      <Name>DataArt.Atlas.Hosting.Console</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\core\Hosting\DataArt.Atlas.Hosting\DataArt.Atlas.Hosting.csproj">
+      <Project>{51b1dab4-f219-4e8a-a28f-9eed7075545e}</Project>
+      <Name>DataArt.Atlas.Hosting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\core\Logging\DataArt.Atlas.Logging\DataArt.Atlas.Logging.csproj">
+      <Project>{a28a2fa2-bbab-4ddf-a935-a10e10d7ad74}</Project>
+      <Name>DataArt.Atlas.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\core\Messaging\DataArt.Atlas.Messaging.MassTransit\DataArt.Atlas.Messaging.MassTransit.csproj">
+      <Project>{c1278f4b-64a1-4f5b-9c26-e116c15c7ab4}</Project>
+      <Name>DataArt.Atlas.Messaging.MassTransit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\core\Messaging\DataArt.Atlas.Messaging.RabbitMQ\DataArt.Atlas.Messaging.RabbitMQ.csproj">
+      <Project>{d78a76f4-55b2-4146-b1a6-2d84cb7ed7f1}</Project>
+      <Name>DataArt.Atlas.Messaging.RabbitMQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\core\Messaging\DataArt.Atlas.Messaging\DataArt.Atlas.Messaging.csproj">
+      <Project>{fe32faaf-8e25-47a9-8a7d-cf34baf424fb}</Project>
+      <Name>DataArt.Atlas.Messaging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

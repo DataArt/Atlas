@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/ServiceFabric" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="Secrets_Certificate_Thumbprint" Value="21e9e3b2f84bc424137d824562cc1508432c3dab" />
+    <Parameter Name="SampleService_InstanceCount" Value="1" />
+    <Parameter Name="Logging_SinkUrl" Value="http://localhost:5341/" />
+    <Parameter Name="Logging_ApiKey" Value="" />
+    <Parameter Name="Logging_Verbosity" Value="Verbose" />
+    <Parameter Name="Logging_Environment" Value="Cloud" />
+    <Parameter Name="Logging_ApplicationName" Value="Sample Service in the cloud" />
+    <Parameter Name="Sample_UnEncryptedProperty" Value="SF unencrypted" />
+    <Parameter Name="Sample_EncryptedProperty" Value="MIIB4gYJKoZIhvcNAQcDoIIB0zCCAc8CAQAxggFKMIIBRgIBADAuMBoxGDAWBgNVBAMMD1NhbXBsZVNGU2VydmljZQIQG/b8jebWqaFBmaMhmCENHzANBgkqhkiG9w0BAQcwAASCAQCqWxMF3xGc6gqL2mAgOgHauepC3uPsqVv2MiCbCH11nVPVjIHwhrhLyNpBauHZWxG9mlCjgzY5tSSkWaFoiOLL8cJMw7NFXrP3yLtqFt7t/grWBx9WH06j5ylroACKzSH48S60vdn7gcCaG3qp8AlzP5xtrizycyONaQveRcTxwRotUQlW6hDq+QObEE2TIH8sTs++EtdSDO6f4Oo/iMAcKFb9DdX1vJeOob6GvSg72AQoZkDZA2nZkxM95t1LRsSymtpFh9ahCnScf9ySb5H82trnmQwvCFsOx94ozEGL9zCU0UOuSamMsexPlGltfb2/0MpqFv+83Yuj0ju/gd+TMHwGCSqGSIb3DQEHATAdBglghkgBZQMEASoEEAjy0IrCnQ7gPJo5sD1E/F2AUORNnQeHt/qY0V/eUA1U4IswBoK54IvPQpn85DImrFkO7y/HfmiA8ZtWwEl3YJRyCRJdXPa/Gi/GxO7MA7yN7PcWseNPLR/sZ8UtWrUnO1fe" />
+  </Parameters>
+</Application>

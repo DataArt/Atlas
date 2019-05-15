@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.8.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\core\Configuration\DataArt.Atlas.Configuration.File\DataArt.Atlas.Configuration.File.csproj" />
+    <ProjectReference Include="..\..\..\..\core\DataArt.Atlas.Core\DataArt.Atlas.Core.csproj" />
+    <ProjectReference Include="..\..\..\..\core\Discovery\DataArt.Atlas.ServiceDiscovery\DataArt.Atlas.ServiceDiscovery.csproj" />
+    <ProjectReference Include="..\..\..\..\core\Hosting\DataArt.Atlas.Hosting.Console\DataArt.Atlas.Hosting.Console.csproj" />
+    <ProjectReference Include="..\..\..\..\core\Logging\DataArt.Atlas.Logging\DataArt.Atlas.Logging.csproj" />
+    <ProjectReference Include="..\..\..\..\core\Scheduler\DataArt.Atlas.Service.Scheduler.Sdk\DataArt.Atlas.Service.Scheduler.Sdk.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Hosting">
+      <HintPath>..\..\..\..\..\..\.Nuget\packages\microsoft.aspnetcore.hosting\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="hosting.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

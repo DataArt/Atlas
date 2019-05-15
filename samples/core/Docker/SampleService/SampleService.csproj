@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <None Include="*.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DataArt.Atlas.Configuration.File" Version="4.0.0" />
+    <PackageReference Include="DataArt.Atlas.Core" Version="4.0.0" />
+    <PackageReference Include="DataArt.Atlas.Hosting.Console" Version="4.0.0" />
+    <PackageReference Include="DataArt.Atlas.Logging" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Serilog.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+  </ItemGroup>
+
+</Project>

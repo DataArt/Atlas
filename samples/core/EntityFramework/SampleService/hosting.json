@@ -1,0 +1,5 @@
+{
+  "EndpointSetting": {
+    "Endpoint": "http://+:9005"
+  }
+}

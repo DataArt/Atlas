@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flurl.Http" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\core\DataArt.Atlas.CallContext\DataArt.Atlas.CallContext.csproj" />
+    <ProjectReference Include="..\..\..\core\Discovery\DataArt.Atlas.ServiceDiscovery\DataArt.Atlas.ServiceDiscovery.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/ServiceFabric" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <!-- 
+      this is encipherment certificate thumbprint generated just for samples
+      please refer to
+      https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-secret-management
+      tutorial on the details how to generate and use it for Service Fabric settings encipherment
+      
+      If you don't want to regenerate certificate from scratch, file with such certificate is
+      readily available for you in samples/ServiceFabric/cert folder
+    -->
+    <Parameter Name="Secrets_Certificate_Thumbprint" Value="bf 58 dc b3 5b a7 f1 7a 29 bb da 6b 17 f4 9d a9 3c 0a 3c e5" />
+    <Parameter Name="SampleService_InstanceCount" Value="1" />
+    <Parameter Name="Logging_SinkUrl" Value="http://localhost:5341/" />
+    <Parameter Name="Logging_ApiKey" Value="" />
+    <Parameter Name="Logging_Verbosity" Value="Verbose" />
+    <Parameter Name="Logging_Environment" Value="Local 1 Node" />
+    <Parameter Name="Logging_ApplicationName" Value="Sample Service at 1 Node local cluster" />
+    <!-- for this property MustOverride is not set, so default value from ApplicationManifest
+         will be used if not specified here -->
+    <!--Parameter Name="Sample_UnEncryptedProperty" Value="SF unencrypted" /-->
+    <!-- for this property MustOverride is set, so you should specify some value here -->
+    <Parameter Name="Sample_EncryptedProperty" Value="MIIBrAYJKoZIhvcNAQcDoIIBnTCCAZkCAQAxggFEMIIBQAIBADAoMBQxEjAQBgNVBAMMCWxvY2FsaG9zdAIQcwztFkBOn6xCPWdw4uVRkDANBgkqhkiG9w0BAQcwAASCAQC+8X6LuPojJ+EenofQaHvkwBVcRrVw1I8thTCdrCmSKD7OCoulieO6BEOYE06n3YIDYWx6Rsug43GShS+3VdZLY2eBgRxyodnqp53nrUlZdb3luV48iosswS6t0Vgh5cpAhR4AwOOUGaIWGWVkNEm1/bnJp6iCVS3Jni0faGYPQQc9PTYoaTorkvihHLtVtXnBfr7zyt/m61AhBvX3NRz6LVxMKSgLBElHmLPVl2L2B4j/Dcio+/Ilb8pqV7t4u3BcCUW+SRfPQfZtn1V9mdIa6NIVSz9xPuBpYj2EZecJuDzXT49UJdO8bIy4/VHZpO8KxIIMAlzkWZ3XidgZM476MEwGCSqGSIb3DQEHATAdBglghkgBZQMEASoEEFDvZRLcFGHKUzqieJ312PyAIGEjBmlaAPNUGX6DfKl0PNM+1TesSYNYneo2Ramy+Oq+" />
+  </Parameters>
+</Application>

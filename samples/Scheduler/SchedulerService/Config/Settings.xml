@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Section Name="Hosting">
+    <Parameter Name="Url" Value="http://+:9002" />
+  </Section>
+  <Section Name="Logging">
+    <Parameter Name="SinkUrl" Value="http://localhost:5341/" MustOverride="true" />
+    <Parameter Name="ApiKey" Value="" />
+    <Parameter Name="Verbosity" Value="Verbose" MustOverride="true" />
+    <Parameter Name="Environment" Value="Local" MustOverride="true" />
+    <Parameter Name="ApplicationName" Value="Atlas" />
+  </Section>
+  <Section Name="Quartz">
+    <Parameter Name="SchedulerInstanceName" Value="QuartzScheduler"/>
+    <Parameter Name="ThreadPoolThreadCount" Value="5"/>
+    <Parameter Name="JobStoreType" Value="Quartz.Impl.AdoJobStore.JobStoreTX, Quartz"/>
+    <Parameter Name="JobStoreUseProperties" Value="false"/>
+    <Parameter Name="JobStoreDataSource" Value="default"/>
+    <Parameter Name="JobStoreTablePrefix" Value="[Scheduler]."/>
+    <Parameter Name="JobStoreDriverDelegateType" Value="Quartz.Impl.AdoJobStore.SqlServerDelegate, Quartz"/>
+    <!--Provide connection string to MS SQL server-->
+    <Parameter Name="DataSourceConnectionString" Value="" MustOverride="true" IsEncrypted="true" />
+    <Parameter Name="DataSourceProvider" Value="SqlServer"/>
+    <Parameter Name="SerializerType" Value="json"/>
+    <Parameter Name="TriggerStateCheckInterval" Value="00:02:00"/>
+  </Section>
+</Settings>

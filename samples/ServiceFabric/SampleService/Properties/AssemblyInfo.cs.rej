@@ -1,0 +1,10 @@
+diff a/samples/ServiceFabric/SampleService/Properties/AssemblyInfo.cs b/samples/ServiceFabric/SampleService/Properties/AssemblyInfo.cs	(rejected hunks)
+@@ -27,7 +27,7 @@
+ [assembly: AssemblyConfiguration("")]
+ [assembly: AssemblyCompany("")]
+ [assembly: AssemblyProduct("SampleService")]
+-[assembly: AssemblyCopyright("Copyright ©  2018")]
++[assembly: AssemblyCopyright("Copyright �  2018")]
+ [assembly: AssemblyTrademark("")]
+ [assembly: AssemblyCulture("")]
+ 

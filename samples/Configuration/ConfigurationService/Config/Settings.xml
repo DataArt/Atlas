@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Please note that "Build Action" should be custom "SettingFiles" for this file.
+Note about custom before build target:
+<Copy SourceFiles="@(SettingFiles)" DestinationFiles="@(SettingFiles->'$(OutputPath)\$(AssemblyName).Config\%(RecursiveDir)%(Filename)%(Extension)')" />
+For more details please go through ConfigurationSettings.csproj file structure.
+-->
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Section Name="Hosting">
+    <Parameter Name="Url" Value="http://+:9000" />
+  </Section>
+  <Section Name="Logging">
+    <Parameter Name="SinkUrl" Value="http://localhost:5341/" MustOverride="true" />
+    <Parameter Name="Verbosity" Value="Verbose" />
+    <Parameter Name="Environment" Value="Local" />
+    <Parameter Name="ApplicationName" Value="Atlas" />
+  </Section>
+  <!--
+  Section for basic configuration
+  If declared in KeyValueSettings it might be retrieved uning DI like this:
+    ctx.Resolve<IConfigurationClient>().GetSettings<KeyValueSettings>().General
+  and injected just as GeneralSettings class
+  -->
+  <Section Name="General">
+    <Parameter Name="UseLocal" Value="true" />
+  </Section>
+  <!--
+  These two settings sections are retrieved and registered conditionally to DI container (look into AutofacConfig)
+  based on General.UseLocal setting
+  -->
+  <Section Name="Local">
+    <Parameter Name="IntSetting" Value="5" />
+    <Parameter Name="StringSetting" Value="Test Service Local" />
+    <Parameter Name="LaunchDate" Value="2018-08-01" />
+  </Section>
+  <Section Name="Remote">
+    <Parameter Name="IntSetting" Value="500" />
+    <Parameter Name="StringSetting" Value="Test Service Remote" />
+    <Parameter Name="LaunchDate" Value="2018-11-01" />
+  </Section>
+</Settings>

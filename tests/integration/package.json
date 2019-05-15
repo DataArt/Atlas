@@ -1,0 +1,25 @@
+{
+  "name": "atlas-tests",
+  "version": "1.0.0",
+  "description": "tests for dotnet-atlas",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "test-jenkins": "JUNIT_REPORT_PATH=./report.xml ./node_modules/.bin/mocha-parallel-tests"
+  },
+  "author": "sb",
+  "license": "ISC",
+  "devDependencies": {
+    "amqp": "^0.2.6",
+    "bluebird": "^3.5.1",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "config": "^1.30.0",
+    "mocha": "^3.3.0",
+    "mocha-jenkins-reporter": "0.3.12",
+    "mocha-junit-reporter": "^1.17.0",
+    "mocha-parallel-tests": "^2.0.0-alpha.3",
+    "moment": "^2.22.1",
+    "uuid": "^3.2.1"
+  }
+}

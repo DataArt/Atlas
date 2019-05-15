@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <StartupObject></StartupObject>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\core\Configuration\DataArt.Atlas.Configuration.Fabric\DataArt.Atlas.Configuration.Fabric.csproj" />
+    <ProjectReference Include="..\..\..\..\core\DataArt.Atlas.Core\DataArt.Atlas.Core.csproj" />
+    <ProjectReference Include="..\..\..\..\core\Discovery\DataArt.Atlas.ServiceDiscovery.Fabric\DataArt.Atlas.ServiceDiscovery.Fabric.csproj" />
+    <ProjectReference Include="..\..\..\..\core\Hosting\DataArt.Atlas.Hosting.Fabric\DataArt.Atlas.Hosting.Fabric.csproj" />
+    <ProjectReference Include="..\..\..\..\core\Logging\DataArt.Atlas.Logging\DataArt.Atlas.Logging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="run.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
