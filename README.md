@@ -1,4 +1,5 @@
 # Atlas
+[![Build Status](https://travis-ci.org/DataArt/Atlas.svg?branch=master)](https://travis-ci.org/DataArt/Atlas)
 
 Bootstrapping .NET toolchain for instant business functionality delivery in cloud.
 
