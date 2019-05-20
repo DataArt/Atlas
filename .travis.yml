@@ -1,6 +1,2 @@
 language: csharp
 solution: core/Atlas.sln
-dotnet: 2.2.202
-
-script:
-  - dotnet build --configuration Release
