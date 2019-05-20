@@ -1,2 +1,2 @@
 language: csharp
-solution: Atlas.sln
+solution: core/Atlas.sln
