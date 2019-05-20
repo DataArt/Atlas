@@ -26,17 +26,17 @@ namespace DataArt.Atlas.Core.Shell
 {
     internal sealed class ApplicationSettingsReader : IDisposable
     {
-        private IContainer ñontainer;
+        private IContainer container;
         private IConfigurationClient configurationClient;
         private ApplicationSettings settings;
 
-        private IConfigurationClient ConfigurationClient => configurationClient ?? (configurationClient = ñontainer.Resolve<IConfigurationClient>());
+        private IConfigurationClient ConfigurationClient => configurationClient ?? (configurationClient = container.Resolve<IConfigurationClient>());
 
         private ApplicationSettings Settings => settings ?? (settings = ConfigurationClient.GetSettings<ApplicationSettings>());
 
         public ApplicationSettingsReader(IContainer configurationContainer)
         {
-            ñontainer = configurationContainer;
+            container = configurationContainer;
         }
 
         public ApplicationSettings Read()
@@ -46,8 +46,8 @@ namespace DataArt.Atlas.Core.Shell
 
         public void Dispose()
         {
-            ñontainer?.GracefulDispose();
-            ñontainer = null;
+            container?.GracefulDispose();
+            container = null;
         }
     }
 }
