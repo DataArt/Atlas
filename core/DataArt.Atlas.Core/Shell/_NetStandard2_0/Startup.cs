@@ -228,12 +228,15 @@ namespace DataArt.Atlas.Core.Shell
             app.UseMiddleware<ApiAccessLoggingMiddleware>();
             app.UseMiddleware<HttpNotFoundMiddleware>();
 
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
+            if (ApplicationSettings.Hosting.SwaggerEnabled)
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", GetType().Name);
-                c.RoutePrefix = string.Empty;
-            });
+			    app.UseSwagger();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", GetType().Name);
+                    c.RoutePrefix = string.Empty;
+                });
+            }
 
             app.UseMvc(routes =>
             {

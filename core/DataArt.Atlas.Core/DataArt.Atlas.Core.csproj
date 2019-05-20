@@ -106,13 +106,13 @@
   <PropertyGroup>
     <CodeAnalysisRuleSet>$(SolutionDir)StyleCop.Analyzers.ruleset</CodeAnalysisRuleSet>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>4.0.0</Version>
+    <Version>4.0.1</Version>
     <Authors>Nikita Kozlov, Vyacheslav Antonyuk, Igor Petrushevskiy, Vyacheslav Mikhaylov</Authors>
     <Company>DataArt</Company>
     <Description>Library provides fine tuned, proven set of integrated components glued together to solve modern cloud based application needs</Description>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/dataart/atlas</PackageProjectUrl>
-    <PackageReleaseNotes>Go to github</PackageReleaseNotes>
+    <PackageReleaseNotes>Fix swagger enable option</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>

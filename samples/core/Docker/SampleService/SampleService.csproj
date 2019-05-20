@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="DataArt.Atlas.Configuration.File" Version="4.0.0" />
-    <PackageReference Include="DataArt.Atlas.Core" Version="4.0.0" />
+    <PackageReference Include="DataArt.Atlas.Core" Version="4.0.1" />
     <PackageReference Include="DataArt.Atlas.Hosting.Console" Version="4.0.0" />
     <PackageReference Include="DataArt.Atlas.Logging" Version="4.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
