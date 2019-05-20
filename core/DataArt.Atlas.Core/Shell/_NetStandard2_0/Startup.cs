@@ -230,7 +230,7 @@ namespace DataArt.Atlas.Core.Shell
 
             if (ApplicationSettings.Hosting.SwaggerEnabled)
             {
-			    app.UseSwagger();
+                app.UseSwagger();
                 app.UseSwaggerUI(c =>
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", GetType().Name);

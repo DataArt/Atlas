@@ -1,6 +1,5 @@
 language: csharp
 solution: core/Atlas.sln
-mono: none
 
 script:
-  - msbuild /p:Configuration=Release /p:Platform="Any CPU" core/Atlas.sln
+  - dotnet build --configuration Release
