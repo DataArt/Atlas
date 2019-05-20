@@ -1,2 +1,5 @@
 language: csharp
 solution: core/Atlas.sln
+
+script:
+  - msbuild /p:Configuration=Release /p:Platform="Any CPU" core/Atlas.sln
