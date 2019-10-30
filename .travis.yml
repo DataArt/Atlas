@@ -1,2 +1,10 @@
 language: csharp
 solution: core/Atlas.sln
+dist: trusty
+addons:
+  sonarcloud:
+    organization: dataart
+    token:
+        secure: "mfxuyINdlmVbEj4vpXlueYUVBt4+2RzuyrdO6MmnAZ3y1wos1df01Tjjy1hVOJgx6UeE+wyVqngYdBJuXpvUbfMriQD+4hT3HJGzkPueIB+qUZIeh5oFrM7O47cn0gprUP4X2SfUd8VzdtYK8f1xrwqfMCyK59so1RHbPNQah0pCoWRms0f82fWIU7xmbKJm61LPslHfY7358FiHKR2XeYRhx8S+sP51pubDsLx5JHx/xENWLYzuFK2xBa0APrAACof+4BYeld0SWd5yDz1XQvimbXzTD7ZDZDDKg5OekOZUTK7Gh4RjmVptpwePGNJynJ9BblW7DFPiLrwPmAwaaNjeAMueA4OS4SJASq3Qt57Epg4ATHmXiGo5MJ4ixTqG0dw/t184R0PhAwFmEt5uzBUKzdBJWKYIAzLenoWMynpShch4dMI0Ptwr0FWOCSJDDAgseC5DBPdx9A/S+PYMMmRWvrJeQUpLMNEmzOXo3rx19gMjbyou+rtFjiFtpX5J7rrxDYHdv9H977BVj8pRZnYeC1Uxh7o5iyCNNasD+6k5fbQjKE+s60lQlJt8Cwca9Y1zVjqUA6hwg4W83h8ln/VYmsmGNnuChnYYEklgt4NIWNn0MPB1nyKpZgnGgzA/49pTU8wZZlrdq7rNPaxasxu3Lk0nuY4f3/tlUE0YI+s="
+script:
+- sonar-scanner
