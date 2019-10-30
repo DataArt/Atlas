@@ -1,5 +1,5 @@
 # Atlas
-[![Build Status](https://travis-ci.org/DataArt/Atlas.svg?branch=master)](https://travis-ci.org/DataArt/Atlas) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/DataArt/Atlas/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/DataArt/Atlas.svg?branch=master)](https://travis-ci.org/DataArt/Atlas) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=DataArt_Atlas&metric=alert_status)](https://sonarcloud.io/dashboard?id=DataArt_Atlas) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/DataArt/Atlas/blob/master/LICENSE)
 
 Bootstrapping .NET toolchain for instant business functionality delivery in cloud.
 
