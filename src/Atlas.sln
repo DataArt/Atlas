@@ -17,13 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Core.ServiceD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Core.ServiceDiscovery.File", "DataArt.Atlas.Core.ServiceDiscovery.File\DataArt.Atlas.Core.ServiceDiscovery.File.csproj", "{A46D1C19-D168-4EB6-A5ED-005144CA39A6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.ServiceDiscovery.Fabric", "DataArt.Atlas.ServiceDiscovery.Fabric\DataArt.Atlas.ServiceDiscovery.Fabric.csproj", "{7AFA818B-43EB-4EE9-B862-C5740B1B5C72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Azure.ServiceDiscovery.Fabric", "DataArt.Atlas.Azure.ServiceDiscovery.Fabric\DataArt.Atlas.Azure.ServiceDiscovery.Fabric.csproj", "{7AFA818B-43EB-4EE9-B862-C5740B1B5C72}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{5D63E0A4-9625-4396-A865-190C29336BA2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Hosting.Fabric", "DataArt.Atlas.Hosting.Fabric\DataArt.Atlas.Hosting.Fabric.csproj", "{09A83E53-1254-4E66-A7B0-DAAC5D6F09F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Azure.Hosting.Fabric", "DataArt.Atlas.Azure.Hosting.Fabric\DataArt.Atlas.Azure.Hosting.Fabric.csproj", "{09A83E53-1254-4E66-A7B0-DAAC5D6F09F2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Hosting.Console", "DataArt.Atlas.Hosting.Console\DataArt.Atlas.Hosting.Console.csproj", "{C6A325F1-9FE6-439B-B540-5A0BCB1D66DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Core.Hosting.Console", "DataArt.Atlas.Core.Hosting.Console\DataArt.Atlas.Core.Hosting.Console.csproj", "{C6A325F1-9FE6-439B-B540-5A0BCB1D66DB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Core.Logging", "DataArt.Atlas.Core.Logging\DataArt.Atlas.Core.Logging.csproj", "{43326EE5-F775-4E4C-B784-032F2E798704}"
 EndProject
@@ -47,9 +47,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Azure.Messagi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scheduler", "Scheduler", "{FC4C0AE0-820B-42FE-8E66-56CBD477FD5E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Service.Scheduler.Sdk", "DataArt.Atlas.Service.Scheduler.Sdk\DataArt.Atlas.Service.Scheduler.Sdk.csproj", "{7E21C240-5FAF-47D6-A205-2B7BBB7DD943}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Services.Scheduler.Sdk", "DataArt.Atlas.Services.Scheduler.Sdk\DataArt.Atlas.Services.Scheduler.Sdk.csproj", "{7E21C240-5FAF-47D6-A205-2B7BBB7DD943}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Service.Scheduler", "DataArt.Atlas.Service.Scheduler\DataArt.Atlas.Service.Scheduler.csproj", "{E6AD8ECA-A73F-406E-82E3-ED801BBEF336}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Services.Scheduler", "DataArt.Atlas.Services.Scheduler\DataArt.Atlas.Services.Scheduler.csproj", "{E6AD8ECA-A73F-406E-82E3-ED801BBEF336}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Tests.Common", "DataArt.Atlas.Tests.Common\DataArt.Atlas.Tests.Common.csproj", "{63924F69-0CBF-41F1-B7B3-1D47B2D82F5D}"
 EndProject

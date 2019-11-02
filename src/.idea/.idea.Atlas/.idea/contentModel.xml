@@ -7,13 +7,19 @@
     <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
     <e p="$PROJECT_DIR$/../samples/core3/DataArt.Atlas.Samples.Core3Samples" t="IncludeRecursive">
       <e p="appsettings.json" t="Include" />
+      <e p="AtlasApplicationBuilderExtensions.cs" t="Include" />
       <e p="AtlasBuilder.cs" t="Include" />
       <e p="AtlasBuilderExtensions.cs" t="Include" />
+      <e p="AtlasGenericHostBuilderExtensions.cs" t="Include" />
+      <e p="AtlasOptions.cs" t="Include" />
       <e p="AtlasServiceCollectionExtensions.cs" t="Include" />
       <e p="AtlasWebHostBuilderExtensions.cs" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="DataArt.Atlas.Samples.Core3Samples.csproj" t="IncludeRecursive" />
       <e p="HealthCheckOptions.cs" t="Include" />
+      <e p="IAtlasApplication.cs" t="Include" />
+      <e p="IAtlasBuilder.cs" t="Include" />
+      <e p="IAtlasExtensionModule.cs" t="Include" />
       <e p="MessagingOptions.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
@@ -27,8 +33,10 @@
     </e>
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Azure.FileStorage" t="ExcludeRecursive" />
+      <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Azure.Hosting.Fabric" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Azure.Logging.AppInsights" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Azure.Messaging.AzureServiceBus" t="ExcludeRecursive" />
+      <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Azure.ServiceDiscovery.Fabric" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Client" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Configuration" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Configuration.Fabric" t="ExcludeRecursive" />
@@ -36,25 +44,29 @@
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Core" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Core.FileStorage" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Core.HealthCheck" t="ExcludeRecursive" />
+      <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Core.Hosting.Console" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Core.Logging" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Core.Messaging" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Core.ServiceDiscovery" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Core.ServiceDiscovery.File" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.DataAccess.EntityFramework.MsSql" t="ExcludeRecursive" />
-      <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Hosting.Console" t="ExcludeRecursive" />
-      <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Hosting.Fabric" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Messaging.MassTransit" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Messaging.RabbitMQ" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Server" t="ExcludeRecursive" />
-      <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Service.Scheduler" t="ExcludeRecursive" />
-      <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Service.Scheduler.Sdk" t="ExcludeRecursive" />
-      <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.ServiceDiscovery.Fabric" t="ExcludeRecursive" />
+      <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Services.Scheduler" t="ExcludeRecursive" />
+      <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Services.Scheduler.Sdk" t="ExcludeRecursive" />
       <e p=".Build/bin_Debug_AnyCPU/DataArt.Atlas.Tests.Common" t="ExcludeRecursive" />
       <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Azure.FileStorage" t="ExcludeRecursive">
         <e p="DataArt.Atlas.Azure.FileStorage.AssemblyInfo.cs" t="Include" />
       </e>
+      <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Azure.Hosting.Fabric" t="ExcludeRecursive">
+        <e p="DataArt.Atlas.Azure.Hosting.Fabric.AssemblyInfo.cs" t="Include" />
+      </e>
       <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Azure.Logging.AppInsights" t="ExcludeRecursive" />
       <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Azure.Messaging.AzureServiceBus" t="ExcludeRecursive" />
+      <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Azure.ServiceDiscovery.Fabric" t="ExcludeRecursive">
+        <e p="DataArt.Atlas.Azure.ServiceDiscovery.Fabric.AssemblyInfo.cs" t="Include" />
+      </e>
       <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Client" t="ExcludeRecursive">
         <e p="DataArt.Atlas.Client.AssemblyInfo.cs" t="Include" />
       </e>
@@ -76,6 +88,9 @@
       <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Core.HealthCheck" t="ExcludeRecursive">
         <e p="DataArt.Atlas.Core.HealthCheck.AssemblyInfo.cs" t="Include" />
       </e>
+      <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Core.Hosting.Console" t="ExcludeRecursive">
+        <e p="DataArt.Atlas.Core.Hosting.Console.AssemblyInfo.cs" t="Include" />
+      </e>
       <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Core.Logging" t="ExcludeRecursive">
         <e p="DataArt.Atlas.Core.Logging.AssemblyInfo.cs" t="Include" />
       </e>
@@ -91,12 +106,6 @@
       <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.DataAccess.EntityFramework.MsSql" t="ExcludeRecursive">
         <e p="DataArt.Atlas.DataAccess.EntityFramework.MsSql.AssemblyInfo.cs" t="Include" />
       </e>
-      <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Hosting.Console" t="ExcludeRecursive">
-        <e p="DataArt.Atlas.Hosting.Console.AssemblyInfo.cs" t="Include" />
-      </e>
-      <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Hosting.Fabric" t="ExcludeRecursive">
-        <e p="DataArt.Atlas.Hosting.Fabric.AssemblyInfo.cs" t="Include" />
-      </e>
       <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Messaging.MassTransit" t="ExcludeRecursive">
         <e p="DataArt.Atlas.Messaging.MassTransit.AssemblyInfo.cs" t="Include" />
       </e>
@@ -106,14 +115,11 @@
       <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Server" t="ExcludeRecursive">
         <e p="DataArt.Atlas.Server.AssemblyInfo.cs" t="Include" />
       </e>
-      <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Service.Scheduler" t="ExcludeRecursive">
-        <e p="DataArt.Atlas.Service.Scheduler.AssemblyInfo.cs" t="Include" />
+      <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Services.Scheduler" t="ExcludeRecursive">
+        <e p="DataArt.Atlas.Services.Scheduler.AssemblyInfo.cs" t="Include" />
       </e>
-      <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Service.Scheduler.Sdk" t="ExcludeRecursive">
-        <e p="DataArt.Atlas.Service.Scheduler.Sdk.AssemblyInfo.cs" t="Include" />
-      </e>
-      <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.ServiceDiscovery.Fabric" t="ExcludeRecursive">
-        <e p="DataArt.Atlas.ServiceDiscovery.Fabric.AssemblyInfo.cs" t="Include" />
+      <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Services.Scheduler.Sdk" t="ExcludeRecursive">
+        <e p="DataArt.Atlas.Services.Scheduler.Sdk.AssemblyInfo.cs" t="Include" />
       </e>
       <e p=".Build/obj_Debug_AnyCPU/DataArt.Atlas.Tests.Common" t="ExcludeRecursive">
         <e p="DataArt.Atlas.Tests.Common.AssemblyInfo.cs" t="Include" />
@@ -128,6 +134,20 @@
         <e p="DataArt.Atlas.Azure.FileStorage.csproj" t="IncludeRecursive" />
         <e p="FileStorageClient.cs" t="Include" />
       </e>
+      <e p="DataArt.Atlas.Azure.Hosting.Fabric" t="IncludeRecursive">
+        <e p="_NetStandard2_0" t="Include">
+          <e p="BaseStatelessService.cs" t="Include" />
+          <e p="Certificate.cs" t="Include" />
+          <e p="ServiceFabricApplication.cs" t="Include" />
+          <e p="ServiceFabricExtensions.cs" t="Include" />
+        </e>
+        <e p="ApplicationRunner.cs" t="Include" />
+        <e p="BaseStatelessService.cs" t="Include" />
+        <e p="DataArt.Atlas.Azure.Hosting.Fabric.csproj" t="IncludeRecursive" />
+        <e p="FabricApplication.cs" t="Include" />
+        <e p="FabricOwinCommunicationListener.cs" t="Include" />
+        <e p="ServiceEventSource.cs" t="Include" />
+      </e>
       <e p="DataArt.Atlas.Azure.Logging.AppInsights" t="IncludeRecursive">
         <e p="ApplicationInsightsEventsSink.cs" t="Include" />
         <e p="ApplicationInsightsTracesSink.cs" t="Include" />
@@ -137,6 +157,13 @@
         <e p="AzureServiceBusInitiator.cs" t="Include" />
         <e p="AzureTransportBusFactory.cs" t="Include" />
         <e p="DataArt.Atlas.Azure.Messaging.AzureServiceBus.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="DataArt.Atlas.Azure.ServiceDiscovery.Fabric" t="IncludeRecursive">
+        <e p="CollectionExtension.cs" t="Include" />
+        <e p="DataArt.Atlas.Azure.ServiceDiscovery.Fabric.csproj" t="IncludeRecursive" />
+        <e p="ServiceDiscovery.cs" t="Include" />
+        <e p="ServiceDiscoveryEndpoints.cs" t="Include" />
+        <e p="ServiceDiscoveryExtensions.cs" t="Include" />
       </e>
       <e p="DataArt.Atlas.Configuration" t="IncludeRecursive">
         <e p="DataArt.Atlas.Configuration.csproj" t="IncludeRecursive" />
@@ -236,6 +263,13 @@
           <e p="RecurrentHealthCheck.cs" t="Include" />
         </e>
       </e>
+      <e p="DataArt.Atlas.Core.Hosting.Console" t="IncludeRecursive">
+        <e p="ApplicationRunner.cs" t="Include" />
+        <e p="ColoredConsoleSink.cs" t="Include" />
+        <e p="ConsoleApplication.cs" t="Include" />
+        <e p="ConsoleExtensions.cs" t="Include" />
+        <e p="DataArt.Atlas.Core.Hosting.Console.csproj" t="IncludeRecursive" />
+      </e>
       <e p="DataArt.Atlas.Core.Logging" t="IncludeRecursive">
         <e p="CorrelationIdEnricher.cs" t="Include" />
         <e p="DataArt.Atlas.Core.Logging.csproj" t="IncludeRecursive" />
@@ -331,27 +365,6 @@
         <e p="IHistoricalEntity.cs" t="Include" />
         <e p="IHistoryTrackedEntity.cs" t="Include" />
         <e p="TrackingRepository.cs" t="Include" />
-      </e>
-      <e p="DataArt.Atlas.Hosting.Console" t="IncludeRecursive">
-        <e p="ApplicationRunner.cs" t="Include" />
-        <e p="ColoredConsoleSink.cs" t="Include" />
-        <e p="ConsoleApplication.cs" t="Include" />
-        <e p="ConsoleExtensions.cs" t="Include" />
-        <e p="DataArt.Atlas.Hosting.Console.csproj" t="IncludeRecursive" />
-      </e>
-      <e p="DataArt.Atlas.Hosting.Fabric" t="IncludeRecursive">
-        <e p="_NetStandard2_0" t="Include">
-          <e p="BaseStatelessService.cs" t="Include" />
-          <e p="Certificate.cs" t="Include" />
-          <e p="ServiceFabricApplication.cs" t="Include" />
-          <e p="ServiceFabricExtensions.cs" t="Include" />
-        </e>
-        <e p="ApplicationRunner.cs" t="Include" />
-        <e p="BaseStatelessService.cs" t="Include" />
-        <e p="DataArt.Atlas.Hosting.Fabric.csproj" t="IncludeRecursive" />
-        <e p="FabricApplication.cs" t="Include" />
-        <e p="FabricOwinCommunicationListener.cs" t="Include" />
-        <e p="ServiceEventSource.cs" t="Include" />
       </e>
       <e p="DataArt.Atlas.Messaging.MassTransit" t="IncludeRecursive">
         <e p="Consume" t="Include">
@@ -452,7 +465,7 @@
           <e p="VersionInfoResolver.cs" t="Include" />
         </e>
       </e>
-      <e p="DataArt.Atlas.Service.Scheduler" t="IncludeRecursive">
+      <e p="DataArt.Atlas.Services.Scheduler" t="IncludeRecursive">
         <e p="Application" t="Include">
           <e p="_NetStandard2_0" t="Include">
             <e p="QuartzFactory.cs" t="Include" />
@@ -474,7 +487,7 @@
             </e>
           </e>
         </e>
-        <e p="DataArt.Atlas.Service.Scheduler.csproj" t="IncludeRecursive" />
+        <e p="DataArt.Atlas.Services.Scheduler.csproj" t="IncludeRecursive" />
         <e p="HealthCheck" t="Include">
           <e p="TriggersStateCheck.cs" t="Include" />
         </e>
@@ -499,9 +512,9 @@
           <e p="SchedulerSettings.cs" t="Include" />
         </e>
       </e>
-      <e p="DataArt.Atlas.Service.Scheduler.Sdk" t="IncludeRecursive">
+      <e p="DataArt.Atlas.Services.Scheduler.Sdk" t="IncludeRecursive">
         <e p="ContainerModule.cs" t="Include" />
-        <e p="DataArt.Atlas.Service.Scheduler.Sdk.csproj" t="IncludeRecursive" />
+        <e p="DataArt.Atlas.Services.Scheduler.Sdk.csproj" t="IncludeRecursive" />
         <e p="ISchedulerClient.cs" t="Include" />
         <e p="JobRegistration" t="Include">
           <e p="CronJob.cs" t="Include" />
@@ -520,13 +533,6 @@
         </e>
         <e p="SchedulerClient.cs" t="Include" />
         <e p="SchedulerClientConfig.cs" t="Include" />
-      </e>
-      <e p="DataArt.Atlas.ServiceDiscovery.Fabric" t="IncludeRecursive">
-        <e p="CollectionExtension.cs" t="Include" />
-        <e p="DataArt.Atlas.ServiceDiscovery.Fabric.csproj" t="IncludeRecursive" />
-        <e p="ServiceDiscovery.cs" t="Include" />
-        <e p="ServiceDiscoveryEndpoints.cs" t="Include" />
-        <e p="ServiceDiscoveryExtensions.cs" t="Include" />
       </e>
       <e p="DataArt.Atlas.Tests.Common" t="IncludeRecursive">
         <e p="AutofacConfigValidator.cs" t="Include" />
