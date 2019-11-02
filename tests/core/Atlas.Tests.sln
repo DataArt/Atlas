@@ -51,7 +51,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Hosting.Conso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.Tests", "DataArt.Atlas.Tests\DataArt.Atlas.Tests.csproj", "{9A4EF1F1-2326-4A31-B0E4-8FFEEF6FF1F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataArt.Atlas.BetaService.Sdk", "DataArt.Atlas.BetaService.Sdk\DataArt.Atlas.BetaService.Sdk.csproj", "{C2F0BE5A-7082-4A61-812F-32AA5D2E5003}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.BetaService.Sdk", "DataArt.Atlas.BetaService.Sdk\DataArt.Atlas.BetaService.Sdk.csproj", "{C2F0BE5A-7082-4A61-812F-32AA5D2E5003}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataArt.Atlas.ServiceDiscovery.File", "..\..\core\Discovery\DataArt.Atlas.ServiceDiscovery.File\DataArt.Atlas.ServiceDiscovery.File.csproj", "{710AD240-C0FC-458C-9159-31B1036A3785}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{C2F0BE5A-7082-4A61-812F-32AA5D2E5003}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2F0BE5A-7082-4A61-812F-32AA5D2E5003}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2F0BE5A-7082-4A61-812F-32AA5D2E5003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{710AD240-C0FC-458C-9159-31B1036A3785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{710AD240-C0FC-458C-9159-31B1036A3785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{710AD240-C0FC-458C-9159-31B1036A3785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{710AD240-C0FC-458C-9159-31B1036A3785}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -158,6 +164,7 @@ Global
 		{3CEE1BEF-7ED9-4539-B8A8-2989A214A847} = {07717804-5B98-429B-9B33-E0921274D93E}
 		{C9154F0D-CA23-44E3-B7DF-D1585E2CFF9B} = {FF21452D-EC7F-46A5-9FD5-AD4898A035CE}
 		{BD00B23C-39BE-4672-ABC9-1A31F6054C59} = {7501A76F-CB9A-4AA1-9BF9-1B53CA876C71}
+		{710AD240-C0FC-458C-9159-31B1036A3785} = {CCF2E8FA-467D-46E7-BA3D-3A17D1AA1006}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8CDA344B-5365-45B8-8F27-3BB3A520F495}

@@ -21,9 +21,7 @@ using Serilog;
 
 namespace RabbitMQService.ESB
 {
-    internal sealed class DummyMessageConsumer
-        : IConsumer<DefaultBusType, DefaultRoutingType, DummyMessage>
-
+    internal sealed class DummyMessageConsumer : IConsumer<DefaultBusType, DefaultRoutingType, DummyMessage>
     {
         public Task Consume(DummyMessage message)
         {

@@ -17,7 +17,7 @@
 #endregion
 namespace RabbitMQService
 {
-    class Program
+    static class Program
     {
         static void Main()
         {

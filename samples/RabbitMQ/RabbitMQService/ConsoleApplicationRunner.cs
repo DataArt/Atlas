@@ -17,6 +17,11 @@
 #endregion
 
 using DataArt.Atlas.Core.Shell;
+using DataArt.Atlas.Hosting.Console;
+using DataArt.Atlas.Configuration.File;
+using DataArt.Atlas.Messaging.RabbitMq;
+using DataArt.Atlas.Messaging.Consume;
+using DataArt.Atlas.Messaging.MassTransit;
 
 namespace RabbitMQService
 {
@@ -26,11 +31,11 @@ namespace RabbitMQService
         public static void Run()
         {
             new Application<TService>()
-                .WithRunner<DataArt.Atlas.Hosting.Console.ApplicationRunner>()
-                .WithConfigurationClient<DataArt.Atlas.Configuration.File.ConfigurationClient>()
-                .UseSerilogSinkConfiguration(DataArt.Atlas.Hosting.Console.ColoredConsole.Sink)
-                .WithServiceBus<DataArt.Atlas.Messaging.RabbitMq.RabbitMqServiceBusInitiator, DataArt.Atlas.Messaging.Consume.DefaultBusType>()
-                .WithConsumerRegistration< DataArt.Atlas.Messaging.MassTransit.MasstransitConsumerRegistrator>()
+                .WithRunner<ApplicationRunner>()
+                .WithConfigurationClient<ConfigurationClient>()
+                .UseSerilogSinkConfiguration(ColoredConsole.Sink)
+                .WithServiceBus<RabbitMqServiceBusInitiator, DefaultBusType>()
+                .WithConsumerRegistration<MasstransitConsumerRegistrator>()
                 .Run();
         }
     }

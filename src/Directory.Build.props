@@ -1,0 +1,19 @@
+<Project>
+ <PropertyGroup>
+    <Deterministic>true</Deterministic>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  
+    <!-- Vars are not defined when building projects explicitly -->
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <SolutionDir Condition=" '$(SolutionDir)' == '' ">$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildProjectDirectory), Atlas.sln))\</SolutionDir>
+    
+    <!-- Output paths -->
+    <BaseIntermediateOutputPath>$(SolutionDir).Build\obj_$(Configuration)_$(Platform)\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(SolutionDir).Build\obj_$(Configuration)_$(Platform)\$(MSBuildProjectName)\</IntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>$(IntermediateOutputPath)\</MSBuildProjectExtensionsPath>
+    <OutputPath>$(SolutionDir).Build\bin_$(Configuration)_$(Platform)\$(MSBuildProjectName)\</OutputPath>
+    <OutDir>$(OutputPath)</OutDir>
+    <DocumentationFile>$(SolutionDir).Build\doc_$(Configuration)\$(MSBuildProjectName).xml</DocumentationFile>
+ </PropertyGroup>
+</Project>
