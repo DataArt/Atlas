@@ -102,11 +102,11 @@ namespace DataArt.Atlas.Service.Scheduler.Scheduler
                     await scheduler.DeleteJobAsync(jobKey);
 
 #if NET452
-                    Log.Information("{jobId} job was deleted", jobKey.Name);
+                    Log.Information("{jobId} job was deleted", jobId);
 #endif
 
 #if NETSTANDARD2_0
-                    logger.LogInformation("{jobId} job was deleted", jobKey.Name);
+                    logger.LogInformation("{jobId} job was deleted", jobId);
 #endif
                 }
 
