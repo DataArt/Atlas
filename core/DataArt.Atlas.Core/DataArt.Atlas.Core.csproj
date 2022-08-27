@@ -76,7 +76,7 @@
   <ItemGroup Condition="'$(TargetFramework)' == 'net452'">
     <PackageReference Include="Autofac" Version="4.9.1" />
     <PackageReference Include="AutoMapper" Version="7.0.1" />
-    <PackageReference Include="Microsoft.Owin" Version="4.0.1" />
+    <PackageReference Include="Microsoft.Owin" Version="4.1.1" />
     <PackageReference Include="Microsoft.Owin.Security" Version="4.0.1" />
     <PackageReference Include="Autofac.WebApi2" Version="4.2.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="4.0.4.403061554" />
